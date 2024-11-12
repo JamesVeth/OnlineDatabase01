@@ -1,2 +1,2 @@
 # OnlineDatabase01
-An example test database, for my Porfolio
+An example test database.
