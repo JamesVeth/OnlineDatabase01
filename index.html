@@ -8,19 +8,31 @@
 </head>
 <body>
 
-    <button id = "openModalButton">Add New Entry</button>
+    <button id = "openModal" class = "buttons">Add New Entry</button>
 
-    <div id = "modalWindow">
-        <form id ="dataForm">
-            <label for="name">Nama: </label>
-            <input type="text" id = "name" name = "name" required>
+    <div id = "modal" class = "modal">
+        <div class = "modal-content">
+            <span id = "closeModal" class = "close">&times;</span>
+            <!-- &times; is a special character, for X, close icon -->
+            <h2>Create New Entry</h2>
+            <form id ="dataForm">
+                <label for="name">Nama: </label>
+                <input type="text" id = "name" name = "name" required>
+    
+                <label for="employeeNumber">Employee Number: </label>
+                <input type="number" id = "employeeNumber" name = "employeeNumber" required>
+                
+                <label for="gender">Gender: </label>
+                <input type="radio" id = "gender" name = "gender" value = "Male" required>
+                <input type="radio" id = "gender" name = "gender" value = "Female" required>
+    
+                <label for="email">Email: </label>
+                <input type="email" id = "email" name = "email" required>
+    
+                <button class = "buttons" type="submit" >Submit</button>
+            </form>
 
-            <label for="email">Email: </label>
-            <input type="email" id = "email" name = "email" required>
-
-            <label for="employeeNumber">Employee Number: </label>
-            <input type="employeeNumber" id = "employeeNumber" name = "employeeNumber" required>
-        </form>
+        </div>
 
 
     </div>
@@ -35,6 +47,10 @@
 
         id = unique, name = non-unique
         label for pairs with input id
+
+        name would particularly be used with radio buttons, e.g.
+        gender radio buttons must all be grouped as "gender" name
+        and only one of the "gender" names can be selected.
         
 
 
